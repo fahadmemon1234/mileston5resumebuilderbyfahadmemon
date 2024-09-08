@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MileStone 5: Unique Path and Shareable Link Resume By Fahad Memon</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>MileStone 5: Unique Path and Shareable Link Resume By Fahad Memon</h2>
+
+      <!-- Personal Information -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card custom-card">
+            <div class="card-body">
+              <form id="resumeForm">
+                <fieldset>
+                  <legend class="fieldsethead">Personal Information</legend>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Name: </label>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Name"
+                            id="txtName"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Email: </label>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Email"
+                            id="txtEmail"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Phone: </label>
+                        <div class="input-group">
+                          <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Phone"
+                            id="txtPhone"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Profile Picture: </label>
+                        <div class="input-group">
+                          <input
+                            type="file"
+                            class="form-control"
+                            id="txtProfile"
+                            accept=".jpg, .jpeg, .png"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="mb-3">
+                      <label class="form-label">About Me: </label>
+                      <div class="input-group">
+                        <textarea
+                          class="form-control"
+                          id="txtabout"
+                          placeholder="About me"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card custom-card">
+            <div class="card-body">
+              <form id="resumeForm">
+                <fieldset>
+                  <legend class="fieldsethead">Education</legend>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Clg/Unv Name: </label>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="College/University Name"
+                            id="txtclg"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label
+                          for="Code"
+                          class="form-label"
+                          style="color: black"
+                          >Skill Section</label
+                        >
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            id="toggleSkillsButton"
+                            type="checkbox"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Start Date: </label>
+                        <div class="input-group">
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="StartDate"
+                            id="txteduStartDate"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">End Date: </label>
+                        <div class="input-group">
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="EndDate"
+                            id="txteduEndDate"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Description: </label>
+                        <div class="input-group">
+                          <textarea
+                            class="form-control"
+                            id="txtEducationDescription"
+                            placeholder="Description"
+                            rows="3"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="row" id="skillsSection">
+        <div class="col-12">
+          <div class="card custom-card">
+            <div class="card-body">
+              <form id="resumeForm">
+                <fieldset>
+                  <legend class="fieldsethead">Skills</legend>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Skill Name: </label>
+                        <div class="input-group">
+                          <textarea
+                            class="form-control"
+                            id="txtSkill"
+                            placeholder="Skills Name"
+                            rows="3"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="row">
+        <div class="col-12">
+          <div class="card custom-card">
+            <div class="card-body">
+              <form id="resumeForm">
+                <fieldset>
+                  <legend class="fieldsethead">Work Experience</legend>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Company Name: </label>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Company Name"
+                            id="txtCompanyName"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Start Date: </label>
+                        <div class="input-group">
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="StartDate"
+                            id="txtexStartDate"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">End Date: </label>
+                        <div class="input-group">
+                          <input
+                            type="date"
+                            class="form-control"
+                            placeholder="EndDate"
+                            id="txtexEndDate"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Position: </label>
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Position"
+                            id="txtPosition"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label class="form-label">Description: </label>
+                        <div class="input-group">
+                          <textarea
+                            class="form-control"
+                            id="txtExperienceDescription"
+                            placeholder="Description"
+                            rows="3"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-primary custom-button"
+            onclick="GenerateResume()"
+            id="generateResumeButton"
+          >
+            Generate Resume Below
+          </button>
+        </div>
+      </div>
+
+      <div id="resume-output" class="resume-output"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/64a22e3032.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
